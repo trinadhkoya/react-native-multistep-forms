@@ -20,7 +20,7 @@ export class Index extends Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const { comeInOnNext = defaultInOnNext } = this.props;
     this.setState({ action: comeInOnNext });
   }
